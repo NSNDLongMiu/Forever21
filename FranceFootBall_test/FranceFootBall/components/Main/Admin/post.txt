@@ -1,0 +1,6 @@
+nameRoom: body.nameRoom ,
+      content: body.content ,
+      blog: body.blog ,
+      imageRoom: body.imageRoom ,
+      nameCustomer: body.nameCustomer ,
+      PhoneCustomer: body.PhoneCustomer ,

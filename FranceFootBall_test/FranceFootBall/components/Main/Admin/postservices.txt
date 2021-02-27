@@ -1,0 +1,12 @@
+let register = async (body) => {
+    bcrypt.hash(body.password, 10, async (err, hash) => {
+      if (err) {return next(err);}
+      await User.create({
+        username: body.username,
+        email: body.email,
+        role: "customer",
+        password: hash,
+      });
+    })
+    return true;
+}
